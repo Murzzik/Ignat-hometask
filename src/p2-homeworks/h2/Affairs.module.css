@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap');
+
+.affairsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.affairsMain {
+    background: #F5EEDC radial-gradient(#ECB390 7.2%, transparent 0);
+    background-size: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    padding: 1rem;
+}
+
+.Header {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: #DD4A48;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    -webkit-text-stroke: 1px #000;
+}
+
+.customName {
+    color: #DD4A48;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    -webkit-text-stroke: 1px #000;
+}
+
+.priorityButtonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.customPriorityTitle {
+    text-align: center;
+    color: #ECB390;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #000;
+}
+
+.deleteButtonStyle {
+    font-size: 18px;
+    width: 70%;
+    font-weight: 700;
+    color: #F5EEDC;
+    margin: 5px;
+    background: #DD4A48;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: .6s;
+}
+
+.divButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.deleteButtonStyle:hover span {
+    display: none;
+}
+
+.deleteButtonStyle:hover {
+    cursor: pointer;
+    color: #000;
+    transform: scale(1.1);
+    background: #C0D8C0;
+}
+
+.deleteButtonStyle:hover:after {
+    content: 'Are you sure?';
+}
+
+.priorityButton {
+    font-size: 14px;
+    font-weight: 700;
+    color: #F5EEDC;
+    width: 100px;
+    background: #DD4A48;
+    margin: 30px;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 25px 15px 25px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.priorityButton:hover {
+    cursor: pointer;
+    color: #000;
+    transform: scale(1.1);
+    background: #C0D8C0;
+}
+
+.priorityButton:nth-child(2):hover {
+    background: #f30606;
+}
+
+.priorityButton:nth-child(3):hover {
+    background: #ffb000;
+}
+
+.priorityButton:nth-child(4):hover {
+    background: #0cc404;
+}

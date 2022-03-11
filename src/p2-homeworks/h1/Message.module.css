@@ -1,0 +1,58 @@
+.message {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    padding: 5px;
+}
+{/*Общее окошко чата, в котором содержится сообщение, имя пользователя и время*/}
+.chatWindow {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: #DD4A48;
+    border-radius: 4px;
+    box-shadow: 2px 4px 5px #DD4A48;
+    position: relative;
+    margin: 0 15px 5px;
+}
+{/*Уголок чата*/}
+.chatWindow_arrow {
+    position: absolute;
+    width: 0;
+    bottom: 60px;
+    left: -16px;
+    height: 0;
+}
+{/*Уголок чата*/}
+.chatWindow_arrow:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 9px solid #DD4A48;
+    border-radius: 0 20px 0;
+    width: 15px;
+    height: 30px;
+    transform: rotate(145deg);
+}
+{/*Имя пользователя*/}
+.memberName {
+    color: #F5EEDC;
+    margin: 0 10px;
+    font-weight: 700;
+}
+{/*Аватар пользователя*/}
+.memberAvatar {
+    width: 60px;
+    border-radius: 50%;
+}
+{/*Сообщение от пользователя*/}
+.chatMessage {
+    color: #F5EEDC;
+    margin: 0 10px;
+}
+{/*Время в чате*/}
+.chatTime {
+    color: #F5EEDC;
+    align-self: flex-end;
+    opacity: 0.5;
+}
