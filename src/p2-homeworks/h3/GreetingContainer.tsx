@@ -33,12 +33,12 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const addUser = () => {
         addUserCallback(name)
         alert(`Hello ${name}!`)
+        setName('')
     }
 
     const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.key === "Enter" && name) {
             addUser()
-            setName('')
         }
     }
 

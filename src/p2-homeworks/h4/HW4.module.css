@@ -1,5 +1,5 @@
-.blue {
-    border-bottom: 5px solid blue;
+.brown {
+    border-bottom: 3px solid #622828;
 }
 
 .column {
@@ -10,4 +10,15 @@
 
 .testSpanError {
     color: blue;
+}
+
+.header {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: #DD4A48;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    -webkit-text-stroke: 1px #000;
 }

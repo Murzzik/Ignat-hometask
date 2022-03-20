@@ -34,6 +34,7 @@
 
 .inputBox .error:focus {
     background: #DD4A48;
+    border: 2px solid #622828;
 }
 
 .inputBox input:focus {
@@ -69,6 +70,7 @@
 }
 
 .errorMsg {
+    padding: 5px;
     font-weight: 700;
     font-size: 18px;
     color: #f30606;

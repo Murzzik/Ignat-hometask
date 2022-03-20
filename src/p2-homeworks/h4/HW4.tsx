@@ -6,14 +6,15 @@ import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 
 function HW4() {
     const [text, setText] = useState<string>('')
-    const error = text ? '' : 'error'
+    const error = text ? '' : 'Fix me!'
 
     const showAlert = () => {
         if (error) {
-            alert('введите текст...')
+            alert('Видимо что-то пошло не так :(')
         } else {
-            alert(text) // если нет ошибки показать текст
+            alert(`Признаюсь честно, ${text} меня успокивает:)`) // если нет ошибки показать текст
         }
+        setText('')
     }
 
     const [checked, setChecked] = useState<boolean>(false)
@@ -21,8 +22,7 @@ function HW4() {
 
     return (
         <div>
-            <hr/>
-            homeworks 4
+            <span className={s.header}>HomeWork 4:</span>
 
             <div className={s.column}>
                 <SuperInputText
@@ -34,7 +34,7 @@ function HW4() {
                 />
 
                 <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                    className={s.brown} // проверьте, рабоет ли смешивание классов
                 />
 
                 {/*----------------------------------------------------*/}
@@ -60,14 +60,14 @@ function HW4() {
                     checked={checked}
                     onChangeChecked={setChecked}
                 >
-                    some text {/*// этот текст попадёт в children*/}
+                    Click on me! {/*// этот текст попадёт в children*/}
                 </SuperCheckbox>
 
                 {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                <SuperCheckbox checked={checked} onChange={testOnChange}>Cmon, click!!!</SuperCheckbox>
             </div>
 
-            <hr/>
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperInputText/>*/}
             {/*<AlternativeSuperButton/>*/}

@@ -1,7 +1,43 @@
 .default {
+    font-size: 18px;
+    font-weight: 700;
+    color: #DD4A48;
+    margin-top: 10px;
+    background: #ECB390;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: .6s;
+}
 
+.default:hover {
+    cursor: pointer;
+    color: #991b19;
+    transform: scale(1.05);
+    background: #f7d3bc;
+}
+
+.default:disabled {
+    color: #F5EEDC;
+    background: #DD4A48;
+    opacity: 0.4;
+    transform: none;
 }
 
 .red {
-    background: red;
+    font-size: 18px;
+    font-weight: 700;
+    color: #F5EEDC;
+    margin-top: 10px;
+    background: #DD4A48;
+    font-family: 'Raleway', sans-serif;
+    transition: .6s;
+    border-radius: 5px;
+}
+
+.red:hover {
+    cursor: pointer;
+    color: #000;
+    transform: scale(1.05);
+    background: #ff0300;
 }

@@ -13,7 +13,7 @@
     padding: 1rem;
 }
 
-.Header {
+.header {
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -73,6 +73,7 @@
     color: #000;
     transform: scale(1.1);
     background: #C0D8C0;
+    transition: .3s;
 }
 
 .deleteButtonStyle:hover:after {
@@ -100,14 +101,39 @@
     background: #C0D8C0;
 }
 
+.priorityButton:focus {
+    cursor: pointer;
+    color: #000;
+    transform: scale(1.1);
+    background: #C0D8C0;
+}
+
 .priorityButton:nth-child(2):hover {
     background: #f30606;
+}
+
+.priorityButton:nth-child(2):focus{
+    background: #f30606;
+    color: #000;
+    transform: scale(1.1);
 }
 
 .priorityButton:nth-child(3):hover {
     background: #ffb000;
 }
 
+.priorityButton:nth-child(3):focus {
+    background: #ffb000;
+    color: #000;
+    transform: scale(1.1);
+}
+
 .priorityButton:nth-child(4):hover {
     background: #0cc404;
+}
+
+.priorityButton:nth-child(4):focus {
+    background: #0cc404;
+    color: #000;
+    transform: scale(1.1);
 }
