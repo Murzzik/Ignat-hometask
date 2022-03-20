@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
 import s from './Affairs.module.css'
-import {debug} from "util";
 import {v1} from "uuid";
 
 // types
@@ -32,7 +31,6 @@ export const deleteAffair = (affairs: Array<AffairType>, _id: string): Array<Aff
 }
 
 function HW2() {
-    debugger
     const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs) // need to fix any
     const [filter, setFilter] = useState<FilterType>('all')
 
