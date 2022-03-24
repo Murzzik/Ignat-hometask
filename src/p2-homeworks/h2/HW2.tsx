@@ -26,9 +26,12 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): A
     if (filter === 'all') return affairs;
     else return affairs.filter((a: AffairType) => a.priority === filter);
 }
+
 export const deleteAffair = (affairs: Array<AffairType>, _id: string): Array<AffairType> => { // need to fix any
     return affairs.filter(a => a._id !== _id)
 }
+
+// (argument) => {expressions}
 
 function HW2() {
     const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs) // need to fix any

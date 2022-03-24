@@ -57,7 +57,7 @@ a:-webkit-any-link {
     align-items: center;
     width: 340px;
     transition-duration: 1s;
-    transform: translate(-270px);
+    transform: translate(-280px);
 }
 
 .navigate:hover {

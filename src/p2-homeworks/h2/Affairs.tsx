@@ -38,7 +38,7 @@ function Affairs(props: AffairsPropsType) {
                 <button className={s.priorityButton} onClick={setHigh}>High</button>
                 <button className={s.priorityButton} onClick={setMiddle}>Middle</button>
                 <button className={s.priorityButton} onClick={setLow}>Low</button>
-                <button className={s.priorityButton} onClick={() => window.location.reload()}>Reload page</button>
+                <button className={s.priorityButton} onClick={() => window.location.reload()}>Reload</button>
             </div>
         </>
     )
