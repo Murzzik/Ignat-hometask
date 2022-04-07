@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {ToastContainer} from "react-toastify";
 import GreetingContainer from './GreetingContainer'
 import s from './Greeting.module.css'
 import {v1} from "uuid";
@@ -18,7 +17,6 @@ function HW3() {
         setUsers([...users, {_id: v1(), name: name}]) // need to fix
     }
 
-
     return (
         <div>
             <hr/>
@@ -27,7 +25,6 @@ function HW3() {
             {/*should work (должно работать)*/}
 
             <GreetingContainer users={users} addUserCallback={addUserCallback} />
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeGreeting/>*/}

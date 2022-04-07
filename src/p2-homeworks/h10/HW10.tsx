@@ -1,33 +1,40 @@
 import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import {useDispatch, useSelector} from "react-redux";
+import {AppStoreType} from "./bll/store";
+import {InitST, loadingAC} from "./bll/loadingReducer";
+import s from './HW10.module.css'
+import {TraceSpinner} from "react-spinners-kit";
 
 function HW10() {
-    // useSelector, useDispatch
-    const loading = false
+    const dispatch = useDispatch()
+    const state = useSelector<AppStoreType, InitST>(state => state.loading)
+    const loading = state.isLoading
 
     const setLoading = () => {
-        // dispatch
-        // setTimeout
+        dispatch(loadingAC(true))
+        const timer = setTimeout(() => {
+            dispatch(loadingAC(false))
+        }, 4000)
         console.log('loading...')
     };
 
     return (
         <div>
-            <hr/>
-            homeworks 10
+            <span className={s.header}>HomeWork 10</span>
 
             {/*should work (должно работать)*/}
             {loading
-                ? (
-                    <div>крутилка...</div>
+                ? ( <div className={s.loadingAnimation}>
+                        <TraceSpinner frontColor='#dd483f' backColor='#c0d8c0'/>
+                    </div>
                 ) : (
-                    <div>
+                    <div className={s.btn}>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
                     </div>
                 )
             }
 
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<Alternative/>*/}
             <hr/>

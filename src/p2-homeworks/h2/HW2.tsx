@@ -42,7 +42,7 @@ function HW2() {
 
     return (
         <>
-            <span className={s.header}>HomeWork 2:</span>
+            <span className={s.header}>HomeWork 2</span>
             <div className={s.affairsMain}>
                 {/*should work (должно работать)*/}
                 <Affairs

@@ -14,7 +14,7 @@ function HW1() {
     return (
         <div>
             <hr/>
-            <span className={s.Header}>HomeWork 1:</span>
+            <span className={s.Header}>HomeWork 1</span>
             {/*should work (должно работать)*/}
             <Message avatar={messageData.avatar} name={messageData.name}
                      message={messageData.message} time={messageData.time}
