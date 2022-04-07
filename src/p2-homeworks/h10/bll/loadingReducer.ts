@@ -7,15 +7,13 @@ export type InitST = {
     isLoading: boolean
 }
 
+export type AppStoreType = {
+    loading: InitST
+}
+
 const initState = {
     isLoading: false
 }
-
-export type AppStateType = {
-    loading: InitST
-}
-type ActionType = LoadingAT
-
 
 export const loadingReducer = (state = initState, action: LoadingAT): InitST => { // fix any
     switch (action.type) {

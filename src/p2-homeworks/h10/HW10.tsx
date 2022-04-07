@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
 import {InitST, loadingAC} from "./bll/loadingReducer";
 import s from './HW10.module.css'
-import {TraceSpinner} from "react-spinners-kit";
+import {GuardSpinner, PongSpinner, RotateSpinner, TraceSpinner} from "react-spinners-kit";
 
 function HW10() {
     const dispatch = useDispatch()
@@ -13,7 +13,7 @@ function HW10() {
 
     const setLoading = () => {
         dispatch(loadingAC(true))
-        const timer = setTimeout(() => {
+        setTimeout(() => {
             dispatch(loadingAC(false))
         }, 4000)
         console.log('loading...')
@@ -26,7 +26,7 @@ function HW10() {
             {/*should work (должно работать)*/}
             {loading
                 ? ( <div className={s.loadingAnimation}>
-                        <TraceSpinner frontColor='#dd483f' backColor='#c0d8c0'/>
+                        <RotateSpinner color='#DD4A48'/>
                     </div>
                 ) : (
                     <div className={s.btn}>
